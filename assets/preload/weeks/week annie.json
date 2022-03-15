@@ -1,0 +1,23 @@
+{
+	"songs": [
+		["Good Enough", "annie", [245, 27, 92]],
+		["Lover", "annie", [245, 27, 92]],
+		["Tug Of War", "annie", [245, 27, 92]],
+		["Animal", "tall-annie", [245, 27, 92]]
+	],
+
+	"weekCharacters": [
+		"annie",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "",
+
+	"storyName": "ATSUOVER",
+	"weekBefore": "tutorial",
+	"weekName": "Week Annie",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

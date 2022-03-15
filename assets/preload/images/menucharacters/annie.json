@@ -1,0 +1,10 @@
+{
+	"confirm_anim": "M Dad Idle",
+	"idle_anim": "Pico Idle Dance",
+	"position": [
+		138,
+		50
+	],
+	"scale": 0.75,
+	"image": "Menu_Annie"
+}

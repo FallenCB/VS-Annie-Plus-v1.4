@@ -1,0 +1,10 @@
+{
+	"confirm_anim": "GF Dancing Beat WHITE",
+	"idle_anim": "GF Dancing Beat WHITE",
+	"position": [
+		30,
+		45
+	],
+	"scale": 0.45,
+	"image": "Menu_Annie"
+}
