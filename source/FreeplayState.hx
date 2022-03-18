@@ -244,6 +244,7 @@ class FreeplayState extends MusicBeatState
 	var holdTime:Float = 0;
 	override function update(elapsed:Float)
 	{
+
 		if (FlxG.sound.music.volume < 0.7)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -523,6 +524,11 @@ class FreeplayState extends MusicBeatState
 			curDifficulty = newPos;
 		}
 	}
+
+	//override function update()
+	//{
+		//FlxG.sound.playMusic(Paths.music('GoodEnough'));
+	//}
 
 	private function positionHighscore() {
 		scoreText.x = FlxG.width - scoreText.width - 6;

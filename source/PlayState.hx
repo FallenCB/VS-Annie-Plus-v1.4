@@ -210,6 +210,9 @@ class PlayState extends MusicBeatState
 	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 	var fastCar:BGSprite;
 
+	var garAU:BGSprite;
+	var garAUBG:BGSprite;
+
 	var upperBoppers:BGSprite;
 	var bottomBoppers:BGSprite;
 	var santa:BGSprite;
@@ -742,6 +745,17 @@ class PlayState extends MusicBeatState
 				evilSnow.scale.x = 1.2;
 				evilSnow.scale.y = 1.2;
 				add(evilSnow);
+
+			case 'garStageAUBG': //Week? - Drowning
+				var garAUBG:BGSprite = new BGSprite('garStageAUBG/garStageAUBG', -600, -140, 0.8, 0.8);
+				garAUBG.updateHitbox();
+				add(garAUBG);
+
+				var garAU:BGSprite = new BGSprite('garStageAUBG/garStageAU', -600, -140, 1, 1);
+				garAU.scale.x = 1;
+				garAU.scale.y = 1;
+				garAU.updateHitbox();
+				add(garAU);
 		}
 
 		if(isPixelStage) {

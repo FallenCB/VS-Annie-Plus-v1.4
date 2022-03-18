@@ -361,6 +361,8 @@ class ModsMenuState extends MusicBeatState
 			add(newMod.icon);
 			i++;
 		}
+
+		//FlxG.sound.playMusic(Paths.music('ArtistLemonade'));
 		
 		if(curSelected >= mods.length) curSelected = 0;
 		
