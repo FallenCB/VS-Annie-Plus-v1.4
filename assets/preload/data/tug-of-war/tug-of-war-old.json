@@ -3872,9 +3872,9 @@
         ,"player2" : "annie"
         ,"isHey" : false
         ,"cutsceneType" : "none"
-        ,"song" : "Tug-of-War"
+        ,"song" : "Tug-of-War-Old"
         ,"uiType" : "normal"
-        ,"stage" : "city"
+        ,"stage" : "city-old"
         ,"validScore" : true
         ,"sections" : 0
         ,"needsVoices" : true

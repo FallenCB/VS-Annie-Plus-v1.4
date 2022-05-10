@@ -27,7 +27,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.5.2h'; //This is also used for Discord RPC
-	public static var vsAnnieVersion:String = '1.4.1'; //Bugfixes update? Or more then that... :)
+	public static var vsAnnieVersion:String = '2.0'; //2.0 Update
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -176,18 +176,18 @@ class MainMenuState extends MusicBeatState
 		add(char1);
 		char1.visible = false;
 
-		char2 = new Character(530, -125, 'tall-annie', true);
+		char2 = new Character(567, 140, 'annienew', true);
 		char2.setGraphicSize(Std.int(char2.width * 1.1));
 		add(char2);
 		char2.visible = false;
 
-		char3 = new Character(740, 130, 'annie', true);
-		char3.setGraphicSize(Std.int(char2.width * 1.0));
+		char3 = new Character(500, 100, 'liquid-annie', true);
+		char3.setGraphicSize(Std.int(char2.width * 0.8));
 		add(char3);
 		char3.visible = false;
 
-		char4 = new Character(770, 150, 'pico', true);
-		char4.setGraphicSize(Std.int(char4.width * 0.61));
+		char4 = new Character(550, 49, 'garcello', true);
+		char4.setGraphicSize(Std.int(char4.width * 0.85));
 		add(char4);
 		char4.visible = false;
 

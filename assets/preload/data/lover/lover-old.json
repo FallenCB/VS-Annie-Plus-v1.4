@@ -2602,9 +2602,9 @@
         ]
         ,"isHey" : false
         ,"cutsceneType" : "none"
-        ,"song" : "Lover"
+        ,"song" : "Lover-Old"
         ,"uiType" : "normal"
-        ,"stage" : "city"
+        ,"stage" : "city-old"
         ,"validScore" : true
         ,"sections" : 0
         ,"needsVoices" : true

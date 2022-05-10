@@ -2432,9 +2432,9 @@
         ]
         ,"isHey" : false
         ,"cutsceneType" : "none"
-        ,"song" : "Good-Enough"
+        ,"song" : "Good-Enough-Old"
         ,"uiType" : "normal"
-        ,"stage" : "city"
+        ,"stage" : "city-old"
         ,"validScore" : true
         ,"sections" : 0
         ,"needsVoices" : true

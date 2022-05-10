@@ -694,13 +694,13 @@ class PlayState extends MusicBeatState
 					bg.antialiasing = false;
 					add(bg);
 				}
-			case 'city': //Week Annie - Good Enough, Lover, Tug Of War
+			case 'city-old': //Week Annie - Good Enough, Lover, Tug Of War
 				if(!ClientPrefs.lowQuality) {
-					var bg:BGSprite = new BGSprite('city/sky', -100, 0, 0.1, 0.1);
+					var bg:BGSprite = new BGSprite('city-old/sky', -100, 0, 0.1, 0.1);
 					add(bg);
 				}
 
-				var city:BGSprite = new BGSprite('city/city', -10, 0, 0.3, 0.3);
+				var city:BGSprite = new BGSprite('city-old/city', -10, 0, 0.3, 0.3);
 				city.setGraphicSize(Std.int(city.width * 0.85));
 				city.updateHitbox();
 				add(city);
@@ -710,7 +710,7 @@ class PlayState extends MusicBeatState
 
 				for (i in 0...5)
 				{
-					var light:BGSprite = new BGSprite('city/win' + i, city.x, city.y, 0.3, 0.3);
+					var light:BGSprite = new BGSprite('city-old/win' + i, city.x, city.y, 0.3, 0.3);
 					light.visible = false;
 					light.setGraphicSize(Std.int(light.width * 0.85));
 					light.updateHitbox();
@@ -718,18 +718,18 @@ class PlayState extends MusicBeatState
 				}
 
 				if(!ClientPrefs.lowQuality) {
-					var streetBehind:BGSprite = new BGSprite('city/behindTrain', -40, 50);
+					var streetBehind:BGSprite = new BGSprite('city-old/behindTrain', -40, 50);
 					add(streetBehind);
 				}
 
-				phillyTrain = new BGSprite('city/train', 2000, 360);
+				phillyTrain = new BGSprite('city-old/train', 2000, 360);
 				add(phillyTrain);
 
 				trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
 				CoolUtil.precacheSound('train_passes');
 				FlxG.sound.list.add(trainSound);
 
-				var street:BGSprite = new BGSprite('city/street', -40, 50);
+				var street:BGSprite = new BGSprite('city-old/street', -40, 50);
 				add(street);
 
 			case 'cave': //Week Annie - Animal
@@ -742,6 +742,115 @@ class PlayState extends MusicBeatState
 				add(evilTree);
 
 				var evilSnow:BGSprite = new BGSprite('cave/evilSnow', -200, 700);
+				evilSnow.scale.x = 1.2;
+				evilSnow.scale.y = 1.2;
+				add(evilSnow);
+
+			case 'city': //Week Annie
+				var bg:BGSprite = new BGSprite('city/skyDay', -190, -20, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('city/city', -190, -20, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('city/Grass', -200, 11, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('city/street', -200, 19, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+			case 'city-night': //Week Annie
+				var bg:BGSprite = new BGSprite('city-night/skyNight', -190, -20, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('city-night/cityNight', -190, -20, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('city-night/GrassNight', -200, 11, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('city-night/streetNight', -200, 19, 0.9, 0.9);
+				bg.scale.x = 1.1;
+				bg.scale.y = 1.1;
+				bg.updateHitbox();
+				add(bg);
+
+			case 'legacy': //Tone It Down
+				/*var bg:BGSprite = new BGSprite('bonusSongs/under', -330, -99, 0.8, 0.8);
+				bg.scale.x = 0.7;
+				bg.scale.y = 0.7;
+				bg.updateHitbox();
+				add(bg);*/
+
+				var bg:BGSprite = new BGSprite('bonusSongs/oldcity2', -400, -50, 0.9, 0.9);
+				bg.scale.x = 0.9;
+				bg.scale.y = 0.9;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('bonusSongs/oldcity1', -400, -99, 0.9, 0.9);
+				bg.scale.x = 0.9;
+				bg.scale.y = 0.9;
+				bg.updateHitbox();
+				add(bg);
+
+			case 'DriveThru': //dilemma
+				var bg:BGSprite = new BGSprite('bonusSongs/DTbg', -100, -300, 0.8, 0.8);
+				bg.scale.x = 0.75;
+				bg.scale.y = 0.75;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('bonusSongs/carbehind', 330, 200, 0.8, 0.8);
+				bg.scale.x = 0.7;
+				bg.scale.y = 0.7;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('bonusSongs/carback', -140, 20, 1, 1);
+				bg.scale.x = 0.8;
+				bg.scale.y = 0.8;
+				bg.updateHitbox();
+				add(bg);
+
+				var bg:BGSprite = new BGSprite('bonusSongs/carfront', -140, 20, 1, 1);
+				bg.scale.x = 0.8;
+				bg.scale.y = 0.8;
+				bg.updateHitbox();
+				add(bg);
+
+			case 'buildings': //Week Annie - Animal
+				var bg:BGSprite = new BGSprite('buildings/sky', -600, -800, 0.9, 0.9);
+				bg.updateHitbox();
+				add(bg);
+
+				var evilTree:BGSprite = new BGSprite('buildings/buildings', -250, -300, 0.9, 0.9);
+				evilTree.scale.x = 0.7;
+				evilTree.scale.y = 0.7;
+				add(evilTree);
+
+				var evilSnow:BGSprite = new BGSprite('buildings/Roof', -200, 700);
 				evilSnow.scale.x = 1.2;
 				evilSnow.scale.y = 1.2;
 				add(evilSnow);

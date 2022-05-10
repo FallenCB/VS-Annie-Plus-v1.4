@@ -69,4 +69,7 @@ function onUpdate()
             triggerEvent('Camera Follow Pos','','')
         end
     end
+    if difficulty == 3 then
+        followchars = false;
+    end
 end

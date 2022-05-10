@@ -140,9 +140,9 @@
 	"healthicon": "tall-annie",
 	"flip_x": false,
 	"healthbar_colors": [
-		245,
-		27,
-		92
+		255,
+		32,
+		67
 	],
 	"camera_position": [
 		-150,
